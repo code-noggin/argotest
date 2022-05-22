@@ -1,0 +1,5 @@
+apiVersion: v2
+appVersion: "2.0"
+description: MCMP observability stack
+name: mcmp-observability
+version: 2.0.0

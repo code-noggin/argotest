@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Chart.Name . }}
+  namespace: {{ .Release.Namespace }}
+data:
+  jaeger.enabled: {{ .Values.jaeger.enabled }}
+  loki.enabled: {{ .Values.loki.enabled }}
+  environmentName: {{ .Values.environmentName }}
+  domainName: {{ .Values.domainName }}

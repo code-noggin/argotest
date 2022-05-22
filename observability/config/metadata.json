@@ -1,0 +1,8 @@
+{
+    "environments": {
+        "demo": [
+            "common/aws-values.yaml",
+            "demo/values.yaml"
+        ]
+    }
+}
