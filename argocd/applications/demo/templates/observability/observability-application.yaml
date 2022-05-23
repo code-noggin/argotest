@@ -15,8 +15,8 @@ spec:
         - config/common/aws-values.yaml
         - config/demo/values.yaml
       parameters: []
-    # path:
-    # repoURL: 'git@github.com:code-noggin/argotest.git'
-    # targetRevision: HEAD
+    path: argocd/applications/demo/observability
+    repoURL: 'git@github.com:code-noggin/argotest.git'
+    targetRevision: HEAD
   syncPolicy:
     automated: null

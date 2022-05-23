@@ -15,8 +15,8 @@ spec:
         - ops-values/values.yaml
         - ops-values/observability/values.yaml
       parameters: []
-    # path: argocd/applications/demp
-    # repoURL: git@github.com:code-noggin/argotest.git
-    # targetRevision: HEAD
+    path: argocd/applications/demo
+    repoURL: git@github.com:code-noggin/argotest.git
+    targetRevision: HEAD
   syncPolicy:
     automated: null
