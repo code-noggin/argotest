@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Chart.Name . }}
+  name: mcmp-observability
   namespace: {{ .Release.Namespace }}
 data:
   jaeger.enabled: {{ .Values.jaeger.enabled }}
