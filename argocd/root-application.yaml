@@ -11,6 +11,6 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: apps
+    path: argocd/applications
     repoURL: git@github.com:code-noggin/argotest.git
     targetRevision: HEAD
