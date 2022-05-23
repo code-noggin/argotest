@@ -4,7 +4,7 @@ metadata:
   name: mcmp-observability
   namespace: {{ .Release.Namespace }}
 data:
-  jaeger.enabled: {{ .Values.jaeger.enabled }}
-  loki.enabled: {{ .Values.loki.enabled }}
-  environmentName: {{ .Values.environmentName }}
-  domainName: {{ .Values.domainName }}
+  jaeger.enabled: "{{ .Values.jaeger.enabled }}"
+  loki.enabled: "{{ .Values.loki.enabled }}"
+  environmentName: "{{ .Values.environmentName }}"
+  domainName: "{{ .Values.domainName }}"
