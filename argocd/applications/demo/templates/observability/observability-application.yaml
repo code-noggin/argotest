@@ -15,7 +15,11 @@ spec:
         - values.yaml
         - config/common/aws-values.yaml
         - config/demo/values.yaml
-      parameters: []
+      parameters:
+        - name: domainName
+          value: xxx
+        - name: environmentName
+          value: xxx
     path: observability
     repoURL: 'git@github.com:code-noggin/argotest.git'
     targetRevision: HEAD
