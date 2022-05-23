@@ -16,10 +16,8 @@ spec:
         - config/common/aws-values.yaml
         - config/demo/values.yaml
       parameters:
-        - name: domainName
-          value: xxx
-        # - name: environmentName
-        #   value: xxx
+        - name: thanosServer
+          value: https://thanos-gateway.multicloud-ibm.com/demo0
     path: observability
     repoURL: 'git@github.com:code-noggin/argotest.git'
     targetRevision: HEAD

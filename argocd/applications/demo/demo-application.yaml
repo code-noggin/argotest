@@ -14,7 +14,11 @@ spec:
       valueFiles:
         - ops-values/values.yaml
         - ops-values/observability/values.yaml
-      parameters: []
+      parameters:
+        - name: domainName
+          value: multicloud-ibm.com
+        - name: environmentName
+          value: demo
     path: argocd/applications/demo
     repoURL: git@github.com:code-noggin/argotest.git
     targetRevision: HEAD
