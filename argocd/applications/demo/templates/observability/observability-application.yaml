@@ -18,8 +18,8 @@ spec:
       parameters:
         - name: domainName
           value: xxx
-        - name: environmentName
-          value: xxx
+        # - name: environmentName
+        #   value: xxx
     path: observability
     repoURL: 'git@github.com:code-noggin/argotest.git'
     targetRevision: HEAD
