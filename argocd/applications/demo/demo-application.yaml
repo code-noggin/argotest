@@ -12,13 +12,9 @@ spec:
   source:
     helm:
       valueFiles:
-        - ops-values/values.yaml
+        - https://raw.githubusercontent.com/code-noggin/argotest/main/ops-overrides/demo/values.yaml
         - ops-values/observability/values.yaml
       parameters: []
-        # - name: domainName
-        #   value: multicloud-ibm.com
-        # - name: environmentName
-        #   value: demo
     path: argocd/applications/demo
     repoURL: git@github.com:code-noggin/argotest.git
     targetRevision: HEAD

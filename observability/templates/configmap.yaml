@@ -5,6 +5,8 @@ metadata:
   namespace: {{ .Release.Namespace }}
 data:
   jaeger.enabled: "{{ .Values.jaeger.enabled }}"
+  jaeger.agent.cmdlineParams.agentTags: "{{ .Values.jaeger.agent.cmdlineParams.agentTags }}"
   loki.enabled: "{{ .Values.loki.enabled }}"
   environmentName: "{{ .Values.environmentName }}"
   domainName: "{{ .Values.domainName }}"
+  thanosServer: "{{ .Values.thanosServer }}"

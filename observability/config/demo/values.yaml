@@ -2,4 +2,4 @@ jaeger:
   enabled: true
   agent:
     cmdlineParams:
-      agent.tags: "environment.name={{ .Values.environmentName }}"
+      agentTags: "environment.name={{ .Values.environmentName }}"
