@@ -15,10 +15,8 @@ spec:
         - config/common/aws-values.yaml
         - config/demo/values.yaml
       parameters: []
-    path: continuous-delivery-usecase/argocd-pipeline/applications/demo-environment
-    directory: git@github.kyndryl.net:pstatham/sandbox.git
-    targetRevision: HEAD
+    # path:
+    # repoURL: 'git@github.com:code-noggin/argotest.git'
+    # targetRevision: HEAD
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
+    automated: null
