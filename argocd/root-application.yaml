@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: argocd/applications
-    repoURL: git@github.com:code-noggin/argotest.git
+    repoURL: 'git@github.com:code-noggin/argotest.git'
     targetRevision: HEAD
     directory:
       recurse: true
