@@ -15,10 +15,8 @@ spec:
         - ops-values/values.yaml
         - ops-values/observability/values.yaml
       parameters: []
-    path: continuous-delivery-usecase/argocd-pipeline/applications/demo
-    repoURL: git@github.kyndryl.net:pstatham/sandbox.git
+    path: apps/demo
+    repoURL: git@github.com:code-noggin/argotest.git
     targetRevision: HEAD
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
+    automated: null

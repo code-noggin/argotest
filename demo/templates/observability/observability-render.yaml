@@ -1,6 +1,0 @@
-observability-render: |-
-    #!/bin/bash
-    set -x
-    helm template observability . \
-        --values config/common/aws-values.yaml \
-        --values config/demo/values.yaml
