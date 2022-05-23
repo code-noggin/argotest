@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: observability
-  namespace: argocd
+  namespace: observability
 spec:
   destination:
     namespace: observability
@@ -12,11 +12,14 @@ spec:
   source:
     helm:
       valueFiles:
+        - values.yaml
         - config/common/aws-values.yaml
         - config/demo/values.yaml
       parameters: []
-    path: argocd/applications/demo/observability
+    path: observability
     repoURL: 'git@github.com:code-noggin/argotest.git'
     targetRevision: HEAD
   syncPolicy:
     automated: null
+    syncOptions:
+      - CreateNamespace=true
